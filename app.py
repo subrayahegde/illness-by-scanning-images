@@ -3,7 +3,7 @@ from pathlib import Path
 import google.generativeai as genai
 ## Streamlit App
 
-genai.configure(api_key="AIzaSyCXan266CbUVvHnl29uQFyDCDTrhAbiw-g")
+genai.configure(api_key=st.secrets["google_gemini_api_key"])
 
 # https://aistudio.google.com/app/u/1/prompts/recipe-creator
 # Set up the model
